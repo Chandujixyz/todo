@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body>
+  
+    <img src="./image/Logo.png" alt="" id="logo">
+    <div id="search-add">
+        <input type="text" id="search" placeholder="Search Your TO-Do List Task">
+        <button id="add">  
+            <span>add</span>       
+            <span  class="material-icons">add_box</span>      
+        </button>
+    </div>
+ 
+    <form id="form" class="hide">
+        <input type="text" id="text" placeholder="give task">
+        <div id="priority-select">
+             <label for="date">Due date:</label>
+            <input type="date" id="date">
+            <label for="priority">priority level:</label>
+            <select name="priority" id="priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>          
+            </select>
+        </div>
+        <button id="close" class="material-icons">close</button>
+        <button id="btn">Submit</button>
+    </form>
+
+
+    <div id="container"> 
+    <div id="todo">
+        <div id="todo-h">
+            <div class="left">
+
+                <div class="list">To-Do List</div>
+               <div id="ram">0</div>
+            </div>
+            <div class="right">
+                <select name="priority" class="list" id="TP">
+                    <option value="All" selected>All</option>
+                    <option value="High">High</option>
+                    <option value="Medium"> Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+               
+            </div>
+        </div>
+        <div id="todo-body">
+            <div id="emptyTodo">You have no to-do items as of now</div>
+        </div>
+    </div>
+
+    <div id="progress">
+        <div id="progress-h">
+            <div class="left">
+
+                <div class="list">Started</div>
+                <div id="shiya">0</div>
+            </div>
+<div class="right">
+    <select name="priority" class="list" id="PP">
+        <option value="All" selected>All</option>
+        <option value="High">High</option>
+        <option value="Medium"> Medium</option>
+        <option value="Low">Low</option>
+    </select>
+     
+</div>
+        </div>
+        <div id="progress-body">
+            <div id="emptyProcess">Drag & Drop here</div>
+        </div>
+    </div>
+
+    <div id="done">
+        <div id="done-h">
+            <div class="left">
+                <div class="list">Completed</div>
+                <div id="lakchhmad">0</div>
+            </div>
+            
+<div class="right">
+    <select name="priority" class="list" id="DP">
+        <option value="All" selected>All</option>
+        <option value="High">High</option>
+        <option value="Medium"> Medium</option>
+        <option value="Low">Low</option>
+
+    </select>
+   
+</div>
+        </div>
+        <div id="done-body">
+            <div  id="emptyDone">Drag & Drop here</div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="w">
+    <p><b class="note">Note:</b> for avoiding the error follow below</p>
+    <p><b class="star">**</b> Drag :-if drag the Task from any were drop in <b class="yellow">yellowgreen</b> border</p>
+    <p><b class="star">*</b> Edit :- if you edit the priority level then only give level name is only<b class="l">(High/Medium/Low)</b>.first word is capital</p>
+</div>
+
+ <script src="./script.js"></script>
+ <!-- <script src="./script2.js"></script> -->
+
+</body>
+</html>
+
